@@ -69,7 +69,7 @@ class ReservationController extends Controller
             $reservation = Reservation::find($id);
 
             if (!$reservation) {
-                return response()->json(['error' => 'Reservation not found'], 404);
+                return response()->json(['error' => 'Reservasi tidak ditemukan'], 404);
             }
 
             $reservation->update([

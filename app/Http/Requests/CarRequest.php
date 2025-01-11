@@ -10,10 +10,10 @@ class CarRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'image' => 'required|string', // Validasi tambahan untuk URL gambar.
+            'image' => 'required|string',
             'brand_name' => 'required|string|max:255',
-            'price_per_day' => 'required|integer|min:0', // Harga tidak boleh negatif.
-            'stock' => 'required|integer|min:0', // Harga tidak boleh negatif.
+            'price_per_day' => 'required|integer|min:0',
+            'stock' => 'required|integer|min:0',
         ];
     }
 
